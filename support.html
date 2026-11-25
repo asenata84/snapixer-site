@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snapixer Support</title>
+<meta name="description" content="Help and contact for Snapixer, the screenshot and OCR tool for Windows.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.svg" alt="" width="32" height="32">Snapixer</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="./">Home</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap narrow doc">
+  <h1>Support</h1>
+  <p class="muted">Answers to common questions, and how to reach us.</p>
+
+  <div class="contact">
+    <!-- TODO(store): replace SUPPORT_EMAIL (both places) with the support address. It is public. -->
+    <p><strong>Contact:</strong> <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a></p>
+    <p class="muted">Please include your Snapixer version (Settings → About), your Windows version and, for errors, the log file (see below).</p>
+  </div>
+
+  <h2>Getting started</h2>
+  <p>Start Snapixer once from the Start menu. It keeps running in the notification area (next to the clock) when you close its window; use the tray icon menu → <em>Quit</em> to exit.</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Key</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td><kbd>F1</kbd></td><td>New screenshot (works from any app)</td></tr>
+      <tr><td><kbd>F3</kbd></td><td>Pin the last screenshot on top of all windows</td></tr>
+      <tr><td><kbd>Shift</kbd>+<kbd>F1</kbd></td><td>New selection on the last kept screen</td></tr>
+      <tr><td><kbd>Enter</kbd> / <kbd>Ctrl</kbd>+<kbd>C</kbd></td><td>Copy the selection</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>Save as PNG</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>Cancel</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>F1 does nothing, or Snapixer says a shortcut could not be registered</summary>
+    <p>Another app already uses that key. Open <em>Settings → Keyboard shortcuts</em>, click the shortcut and press a new key combination. Shortcuts follow the physical key, so they also work with non-Latin keyboard layouts.</p>
+  </details>
+
+  <details>
+    <summary>How do I recognize text in another language?</summary>
+    <p>Open <em>Settings → OCR → Add a language</em>. The language is downloaded once and then works offline. You can tick up to three languages at a time; fewer languages are faster and more accurate.</p>
+  </details>
+
+  <details>
+    <summary>How do I set up the AI assistant?</summary>
+    <p>Open <em>Settings → AI assistant</em>, choose a provider, paste your API key and click <em>Save key</em>, then <em>Test connection</em>. The key comes from your account with that provider, which may charge for its use. For a free, local option, install Ollama and choose the Ollama provider; no key is needed. Then select an area with <kbd>F1</kbd> and click ✨ in the toolbar.</p>
+  </details>
+
+  <details>
+    <summary>How do I start Snapixer with Windows?</summary>
+    <p>Turn on <em>Settings → General → Launch Snapixer when Windows starts</em>. If you turned Snapixer off in Windows (Task Manager or <em>Windows Settings → Apps → Startup</em>), only Windows can turn it back on: Snapixer then shows a button that opens that page.</p>
+  </details>
+
+  <details>
+    <summary>Where are my screenshots and settings stored?</summary>
+    <p>Saved screenshots go to <code>Pictures\Snapixer</code> by default (changeable in the settings). The history, settings and downloaded OCR languages are in the app's private folder, which Windows keeps for Store apps; the <em>Open folder</em> buttons in Snapixer open it directly. Uninstalling Snapixer deletes that folder; screenshots saved to <code>Pictures</code> stay.</p>
+  </details>
+
+  <details>
+    <summary>How do I send the log file?</summary>
+    <p>Open <em>Settings → About → Open the log folder</em> and attach <code>main.log</code> to your email. It contains errors and warnings only, without API keys, and is never sent anywhere unless you send it yourself.</p>
+  </details>
+
+  <details>
+    <summary>Screenshots look pale on my HDR display</summary>
+    <p>On HDR displays Windows may return the screenshot with paler colors. This is a known limitation of the Windows capture API.</p>
+  </details>
+
+  <details>
+    <summary>Can I select an area across two monitors?</summary>
+    <p>Not at the moment: a selection covers one monitor. Starting a selection on another monitor clears the previous one.</p>
+  </details>
+
+  <details>
+    <summary>Is there a free trial?</summary>
+    <p>Yes. The Microsoft Store offers a 15-day free trial with every feature. When it ends, Snapixer asks you to buy it before taking new screenshots; your history and settings stay as they are. Buying is done in the Microsoft Store (Settings &gt; About &gt; Buy in Microsoft Store).</p>
+  </details>
+
+  <details>
+    <summary>How do I get a refund?</summary>
+    <p>Purchases are handled by the Microsoft Store, so refunds are requested from Microsoft through your Microsoft account order history.</p>
+  </details>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Asen Tolsuzov</span>
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
